@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  font-size: 16px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.boxes {
+  border: 1px solid transparent;
+  width: 50%;
+  box-shadow: 5px 5px 2px #d3d3d3;
+  margin: 7rem auto 4rem auto;
+  border-radius: 0.7rem;
+  /* padding: 2rem; */
+}
+
+.box1 {
+  background-color: #fff;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+h2 {
+  color: #2ab2af;
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.box1 > h4 {
+  color: #c0df34;
+  font-size: 1.4rem;
+  padding: 0 2rem 1rem 2rem;
+  font-weight: 700;
+}
+
+.box1 > p {
+  color: #98a6bd;
+  padding: 0 5rem 2rem 2rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.box {
+  display: flex;
+}
+
+.box2 {
+  width: 50%;
+  background-color: #2ab2af;
+  border-bottom-left-radius: 0.7rem;
+}
+
+.box2 > h4,
+.box3 > h4 {
+  color: #fff;
+  padding: 2rem 2rem 1rem 2rem;
+  font-size: 1.4rem;
+}
+
+.box2 > p {
+  padding: 0 2rem 1rem 2rem;
+  color:  #e5eff5;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.07rem;
+}
+
+.box2 > p:first-of-type {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.box2 > p:first-of-type span {
+  font-size: 1rem;
+  color: #cececeef;
+  font-weight: 400;
+}
+
+button {
+  margin: 0.8rem 2rem 2.5rem 2rem;
+  width: 17rem;
+  padding: 0.7rem;
+  border: 1px solid #c0df34;
+  border-radius: 0.3rem;
+  background-color: #c0df34;
+  color: #e1e4e6;
+  font-weight: 700;
+}
+
+.box3 {
+  background-color: #55c9c7;
+  border-bottom-right-radius: 0.7rem;
+  width: 50%;
+}
+
+ul {
+  padding: 0 2rem 1rem 2rem;
+  font-size: 1rem;
+  color:  #e5eff5;
+  font-weight: 400;
+}
+
+ul li {
+  list-style: none;
+  line-height: 1.3rem;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+} 
+
+a:hover {
+  font-style: oblique;
+  text-decoration: underline;
+  color: orchid;
+}
+
+@media only screen and (max-width: 992px) {
+  .boxes {
+    width: auto;
+    margin: 4rem 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .boxes {
+    width: auto;
+    margin: 4rem 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .boxes {
+    width: auto;
+    margin: 2rem 1rem;
+    box-shadow: none;
+  }
+
+  .box1 {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .box1 > h4 {
+    font-size: 1rem;
+    padding: 0 1rem 1rem 1.5rem;
+  }
+
+  .box1 > p {
+    font-size: 0.9rem;
+    padding: 0 1.5rem 2rem 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .box {
+    display: block;
+  }
+
+  .box2 {
+    width: auto;
+    border-bottom-left-radius: 0;
+  }
+
+  .box2 > h4, .box3 h4{
+    font-size: 1.1rem;
+    padding: 2rem 2rem 1rem 1.5rem;
+  }
+
+  .box2 > p {
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .box2 > p:first-of-type {
+    font-size: 1.7rem;
+  }
+
+  button {
+    margin-left: 1.5rem;
+  }
+
+  .box3 {
+    width: auto;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  ul {
+    font-size: 0.9rem;
+    padding-left: 1.5rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .attribution {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+ @media only screen and (max-width: 300px) {
+  .boxes {
+    width: auto;
+    margin: 1rem;
+  }
+
+  button {
+    width: 12rem;
+  }
+} 
